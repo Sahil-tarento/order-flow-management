@@ -176,6 +176,9 @@ public class OrderController {
                 .amount(replayed.getAmount())
                 .currency(replayed.getCurrency())
                 .status(replayed.getStatus())
+                .createdAt(replayed.getCreatedAt())
+                .confirmedAt(replayed.getConfirmedAt())
+                .failureReason(replayed.getFailureReason())
                 .message("Event replay completed successfully")
                 .build();
 
